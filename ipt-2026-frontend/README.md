@@ -1,5 +1,5 @@
-# angular-15-signup-verification-boilerplate
+# ipt-angular-21-boilerplate
 
-Angular 15 Auth Boilerplate - Sign Up with Verification, Login and Forgot Password
+IPT Angular 21 Boilerplate - Email Sign Up with Verification, Authentication & Forgot Password
 
 Documentation at https://jasonwatmore.com/angular-15-auth-boilerplate-sign-up-with-verification-login-and-forgot-password

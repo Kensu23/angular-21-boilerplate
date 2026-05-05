@@ -1,4 +1,4 @@
-﻿import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, materialize, dematerialize } from 'rxjs/operators';
@@ -7,7 +7,7 @@ import { AlertService } from '@app/_services';
 import { Role } from '@app/_models';
 
 // array in local storage for accounts
-const accountsKey = 'angular-15-signup-verification-boilerplate-accounts';
+const accountsKey = 'ipt-angular-21-signup-verification-boilerplate-accounts';
 let accounts: any[] = JSON.parse(localStorage.getItem(accountsKey)!) || [];
 
 @Injectable()
