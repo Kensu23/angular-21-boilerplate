@@ -1,10 +1,10 @@
 {
     "database": {
-        "host": "127.0.0.1",
+        "host": "153.92.15.31",
         "port": 3306,
-        "user": "root",
-        "password": "",
-        "database": "node_mysql_api"
+        "user": "u875409848_albino",
+        "password": "2qW^sUg=M",
+        "database": "u875409848_albino"
     },
     "secret": "SUPER_SECRET_KEY",
     "emailform": "info@my-node-api.com",
