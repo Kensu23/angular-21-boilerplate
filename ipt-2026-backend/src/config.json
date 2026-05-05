@@ -7,7 +7,7 @@
         "database": "u875409848_albino"
     },
     "secret": "SUPER_SECRET_KEY",
-    "emailform": "noreply@brevo.com",
+    "emailform": "felixragasj@gmail.com",
     "smtpOptions": {
         "host": "smtp-relay.brevo.com",
         "port": 587,
