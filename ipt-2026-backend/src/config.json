@@ -7,14 +7,12 @@
         "database": "u875409848_albino"
     },
     "secret": "SUPER_SECRET_KEY",
-    "emailform": "felixragasj@gmail.com",
+    "emailform": "dumpkoyngiperts@gmail.com",
     "smtpOptions": {
-        "host": "smtp-relay.brevo.com",
-        "port": 587,
-        "secure": false,
+        "service": "gmail",
         "auth": {
-            "user": "aa4a96001@smtp-brevo.com",
-            "pass": "xsmtpsib-781708e187d98a44964d1ec0ecbb34ae5a719882d501f97e289982cf3d47ef4b-rtxyBGEFtwjtI7UN"
+            "user": "dumpkoyngiperts@gmail.com",
+            "pass": "lsnwgycdrcyscsdw"
         }
     }
 }
