@@ -5,6 +5,11 @@ import { initialize } from "./_helpers/db"
 import userController from "./users/users.controller"
 import accountsController from "./accounts/accounts.controller"
 import cookieParser from "cookie-parser"
+import swaggerUi from "swagger-ui-express"
+import YAML from "yamljs"
+import path from "path"
+
+const swaggerDocument = YAML.load(path.join(__dirname, "swagger.yaml"))
 
 const app: Application = express()
 
@@ -14,6 +19,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 app.use(cookieParser()) // <-------- the change 
 
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+app.get("/", (req, res) => res.redirect("/api-docs"))
 app.use("/accounts", accountsController)
 app.use("/users", userController)
 
