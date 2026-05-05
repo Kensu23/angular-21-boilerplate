@@ -9,10 +9,15 @@
     "secret": "SUPER_SECRET_KEY",
     "emailform": "dumpkoyngiperts@gmail.com",
     "smtpOptions": {
-        "service": "gmail",
+        "host": "smtp.gmail.com",
+        "port": 465,
+        "secure": true,
         "auth": {
             "user": "dumpkoyngiperts@gmail.com",
             "pass": "lsnwgycdrcyscsdw"
+        },
+        "tls": {
+            "rejectUnauthorized": false
         }
     }
 }
