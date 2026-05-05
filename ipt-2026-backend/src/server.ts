@@ -16,8 +16,8 @@ const app: Application = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(cors())
-app.use(cookieParser()) // <-------- the change 
+app.use(cors({ origin: (origin, callback) => callback(null, true), credentials: true }));
+app.use(cookieParser());
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 app.get("/", (req, res) => res.redirect("/api-docs"))

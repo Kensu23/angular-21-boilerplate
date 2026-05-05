@@ -18,7 +18,7 @@ export function errorHandler(
         return res.status(500).json({ message: err.message })
     }
 
-    return res.status(500).json({ message: "Internal Sever Error" })
+    return res.status(500).json({ message: "Internal Server Error" })
 }
 
 
