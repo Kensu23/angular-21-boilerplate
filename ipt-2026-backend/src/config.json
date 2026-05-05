@@ -9,11 +9,10 @@
     "secret": "SUPER_SECRET_KEY",
     "emailform": "info@my-node-api.com",
     "smtOptions": {
-        "host": "smtp.ethereal.email",
-        "port": 587,
+        "service": "gmail",
         "auth": {
-            "user": "ezra.schroeder@ethereal.email",
-            "pass": "k9HZK4zhSTWgCgdTeW"
+            "user": "YOUR_GMAIL_ADDRESS@gmail.com",
+            "pass": "YOUR_GMAIL_APP_PASSWORD"
         }
     }
 }

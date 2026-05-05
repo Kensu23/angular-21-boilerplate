@@ -82,9 +82,10 @@ async function register(params: any, origin: any) {
     account.verificationToken = randomTokenString();
 
     account.passwordHash = await hash(params.password);
-    account.verified = Date.now();
 
     await account.save();
+
+    await sendVerificationEmail(account, origin);
 }
 
 async function verifyEmail({ token }: any) {
